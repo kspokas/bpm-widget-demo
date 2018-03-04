@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context path="/test-project" docBase="./test-project" debug="1" reloadable="false">
+
+    <Environment name="logName" value="test-project" type="java.lang.String" override="false" />
+    <Environment name="logFilePrefix" value="/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/target/log_test-project" type="java.lang.String" override="false" />
+    <Environment name="logLevel" value="INFO" type="java.lang.String" override="false" />
+    <Environment name="logFileSize" value="200000" type="java.lang.String" override="false" />
+    <Environment name="logFilesCount" value="10" type="java.lang.String" override="false" />
+
+    <Environment name="configVersion" value="production" type="java.lang.String" override="false" />
+
+    <Environment name="applicationBaseURL" value="http://localhost:8181/test-project/" type="java.lang.String" override="false" />
+    <Environment name="resourceRootURL" value="/test-project/resources/" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceRootURL" value="/test-project/protected/" type="java.lang.String" override="false" />
+
+    <Environment name="resourceDiskRootFolder" value="/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/src/main/webapp/resources" type="java.lang.String" override="false" />
+    <Environment name="protectedResourceDiskRootFolder" value="/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/src/main/webapp/protected" type="java.lang.String" override="false" />
+
+    <Environment name="indexDiskRootFolder" value="/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/target/temp/indexdir" type="java.lang.String" override="false" />
+    
+    <Resource name="jdbc/portDataSource" auth="Container"
+                  type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+                  maxActive="8" maxIdle="4"
+                  username="agile" password="agile"
+                  url="jdbc:derby:/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/target/derby/production/test-projectPort;create=true" />
+
+    <Resource name="jdbc/servDataSource" auth="Container"
+                  type="javax.sql.DataSource" driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+                  maxActive="8" maxIdle="4"
+                  username="agile" password="agile"
+                  url="jdbc:derby:/Users/kspokas/projects/redhat/widgets/weekly-demo/test-project/target/derby/production/test-projectServ;create=true" />
+
+</Context>
