@@ -17,6 +17,12 @@
     </New>
     <New class="org.eclipse.jetty.plus.jndi.EnvEntry">
         <Arg></Arg>
+        <Arg>logActiveFileOutput</Arg>
+        <Arg type="java.lang.String">${profile.log.active.file.output}</Arg>
+        <Arg type="boolean">false</Arg>
+    </New>
+    <New class="org.eclipse.jetty.plus.jndi.EnvEntry">
+        <Arg></Arg>
         <Arg>logLevel</Arg>
         <Arg type="java.lang.String">${profile.log.level}</Arg>
         <Arg type="boolean">false</Arg>
